@@ -1,7 +1,9 @@
 package com.example.uee_sl_cricket;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_main);
+
     }
 
     public void methodNotification(View view) {
@@ -31,4 +34,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void rateUs(View view) {
+        Intent intent = new Intent(this, rate_us.class);
+        startActivity(intent);
+    }
 }

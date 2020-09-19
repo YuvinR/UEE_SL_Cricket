@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,13 +20,18 @@ public class rate_us extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d("test","Fuck Okk");
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
+
         setContentView(R.layout.activity_rate_us);
 
         final Button btn = findViewById(R.id.btn_submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("test","Fuck Okk");
                 openDialopg();
             }
         });
@@ -32,15 +39,21 @@ public class rate_us extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-        Log.d("test","Fuck Okk");
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
-        toast.show();
+//        Log.d("test","Fuck Okk");
+//        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
+//        toast.show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 
     public void methodHome(View view) {
-        Log.d("test","Fuck Okk");
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Home",Toast.LENGTH_SHORT);
-        toast.show();
+//        Log.d("test","Fuck Okk");
+//        Toast toast = Toast.makeText(getApplicationContext(),"This Is Home",Toast.LENGTH_SHORT);
+//        toast.show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 
     public void openDialopg(){
