@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".match_history"></activity>
+        <activity android:name=".booking" />
+        <activity android:name=".payments" />
+        <activity android:name=".rate_us" />
+        <activity android:name=".contact_us" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
