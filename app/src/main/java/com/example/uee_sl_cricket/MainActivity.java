@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void rateUs(View view) {
-        Intent intent = new Intent(this, payments.class);
+        Intent intent = new Intent(this, rate_us.class);
         startActivity(intent);
     }
 }
