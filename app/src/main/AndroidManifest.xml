@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Upcoming_Matches"></activity>
+        <activity android:name=".test"></activity>
+        <activity android:name=".Upcoming_Matches" />
         <activity android:name=".match_history" />
         <activity android:name=".booking" />
         <activity android:name=".payments" />
