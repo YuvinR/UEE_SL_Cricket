@@ -21,11 +21,11 @@ public class payments extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_payments);
 
-        final Button btn = findViewById(R.id.btn_proceed);
+        final Button btn = findViewById(R.id.btn_thx);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialopg();
+                openDialog();
             }
         });
 
@@ -41,9 +41,9 @@ public class payments extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openDialopg(){
+    public void openDialog(){
         ThankyouPayment thankYou = new ThankyouPayment();
-        thankYou.show(getSupportFragmentManager(),"thank you");
+        thankYou.show(getSupportFragmentManager(),"Thank you For Purchasing Tickets!");
     }
 
 }
