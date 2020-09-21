@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
-        android:background="@color/white"/>
+        android:background="@drawable/logout_btn"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -106,7 +106,7 @@
                     android:text="Test"
                     android:textAlignment="center"
                     android:textColor="@color/matchHeaderBlue"
-                    android:textSize="15dp"
+                    android:textSize="18dp"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -208,7 +208,7 @@
                     android:text="T20"
                     android:textAlignment="center"
                     android:textColor="@color/matchHeaderBlue"
-                    android:textSize="15dp"
+                    android:textSize="18dp"
                     android:textStyle="bold" />
 
                 <LinearLayout
