@@ -7,4 +7,7 @@
     <color name="white">#FFFFFF</color>
     <color name="matchHeaderBlue">#2196f3</color>
     <color name="lightGrey">#757575</color>
+    <color name="lightYellow">#f2c94c</color>
+    <color name="lightGreen">#29d61e</color>
+    <color name="lightOrange">#f9b342</color>
 </resources>
