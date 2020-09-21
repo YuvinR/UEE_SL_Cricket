@@ -2,6 +2,7 @@ package com.example.uee_sl_cricket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -28,5 +29,10 @@ public class Upcoming_Matches extends AppCompatActivity {
     public void methodHome(View view) {
         Toast toast = Toast.makeText(getApplicationContext(),"This Is Home",Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    public void buyTicketGUI(View view){
+        Intent intent = new Intent(this, booking.class);
+        startActivity(intent);
     }
 }

@@ -115,12 +115,31 @@
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:padding="10dp" />
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/srilanka_flag"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:text="SL"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="140dp"
@@ -164,20 +183,43 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:padding="10dp" />
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/australia"
+                            android:padding="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:text="AUS"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="4dp"
-                    android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/buyTicket" />
+                    android:background="@drawable/buyticket_btn"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:onClick="buyTicketGUI"
+                    android:text="@string/buyTicket"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -217,12 +259,31 @@
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:padding="10dp" />
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/southafrica"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:text="SA"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="140dp"
@@ -266,20 +327,43 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:padding="10dp" />
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/srilanka_flag"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:text="SL"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="4dp"
-                    android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/buyTicket" />
+                    android:background="@drawable/buyticket_btn"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:onClick="buyTicketGUI"
+                    android:text="@string/buyTicket"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>

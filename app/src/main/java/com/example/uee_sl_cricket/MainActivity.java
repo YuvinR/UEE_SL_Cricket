@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void rateUs(View view) {
-        Intent intent = new Intent(this, match_history.class);
+        Intent intent = new Intent(this, Upcoming_Matches.class);
         startActivity(intent);
     }
 }
