@@ -22,8 +22,8 @@ public class booking extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
-        toast.show();
+        Intent intent = new Intent(this, Notification.class);
+        startActivity(intent);
     }
 
     public void methodHome(View view) {

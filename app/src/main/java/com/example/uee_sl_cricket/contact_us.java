@@ -22,7 +22,7 @@ public class contact_us extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Notification.class);
         startActivity(intent);
     }
 

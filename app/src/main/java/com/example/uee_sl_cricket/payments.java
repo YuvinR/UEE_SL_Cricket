@@ -32,7 +32,7 @@ public class payments extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Notification.class);
         startActivity(intent);
     }
 
@@ -43,7 +43,7 @@ public class payments extends AppCompatActivity {
 
     public void openDialog(){
         ThankyouPayment thankYou = new ThankyouPayment();
-        thankYou.show(getSupportFragmentManager(),"Thank you For Purchasing Tickets!");
+        thankYou.show(getSupportFragmentManager(),"thank you");
     }
 
 }

@@ -39,10 +39,7 @@ public class rate_us extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-//        Log.d("test","Fuck Okk");
-//        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
-//        toast.show();
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Notification.class);
         startActivity(intent);
 
     }

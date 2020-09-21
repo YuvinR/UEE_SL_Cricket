@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void methodNotification(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
-        toast.show();
+        Intent intent = new Intent(this, Notification.class);
+        startActivity(intent);
     }
 
     public void methodHome(View view) {
@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void rateUs(View view) {
-        Intent intent = new Intent(this, Upcoming_Matches.class);
+        Intent intent = new Intent(this, Latest_News.class);
         startActivity(intent);
     }
+
 }

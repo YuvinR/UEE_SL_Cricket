@@ -2,6 +2,7 @@ package com.example.uee_sl_cricket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -20,8 +21,8 @@ public class Notification extends AppCompatActivity {
         setContentView(R.layout.activity_notification);
     }
     public void methodNotification(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Notification",Toast.LENGTH_SHORT);
-        toast.show();
+        Intent intent = new Intent(this, Notification.class);
+        startActivity(intent);
     }
 
     public void methodHome(View view) {
