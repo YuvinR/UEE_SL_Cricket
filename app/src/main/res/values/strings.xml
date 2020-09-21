@@ -5,4 +5,12 @@
     <string name="webName">www.srilankacricket.lk</string>
     <string name="addresss">www.srilankacricket.lk</string>
     <string name="buyTicket">Buy Ticket</string>
+    <string name="news1Topic"><u>T10 Cricket League in\nDecember</u></string>
+    <string name="news1body">The Sri Lanka Cricket Board (SLC) is planning to host a T10 tournament in December, involving national ...</string>
+
+    <string name="news2Topic"><u>Tharanga Paranavitana\nRetires</u></string>
+    <string name="news2body">Aug 27, 2020 Known as an old-school opener, he played 32 Test matches, scoring 1792 runs including two hundreds ...</string>
+
+    <string name="news3Topic"><u>SL vs BAN Test series to begin on October 24</u></string>
+    <string name="news3body">Aug 12, 2020 All three matches likely to take place in Colombo; Bangladesh high-performance squad to travel too ...</string>
 </resources>
