@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void rateUs(View view) {
-        Intent intent = new Intent(this, Latest_News.class);
+        Intent intent = new Intent(this, Cricket_Board.class);
         startActivity(intent);
     }
 
