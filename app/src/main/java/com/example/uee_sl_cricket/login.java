@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
 
-
+    //Testing Values. 
     private EditText logingEmail;
     private EditText logingPass;
     private TextView signup;
