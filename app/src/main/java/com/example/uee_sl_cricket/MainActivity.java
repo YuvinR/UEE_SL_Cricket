@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         super.onStart();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user == null) {
-            /*Intent intent = new Intent(MainActivity.this,loginact.class);
+            Intent intent = new Intent(MainActivity.this,MainActivity2.class);
             startActivity(intent);
-            finish();*/
+            finish();
             logout.setVisibility(View.INVISIBLE);
             login.setVisibility(View.VISIBLE);
         } else{

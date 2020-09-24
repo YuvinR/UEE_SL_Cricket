@@ -61,17 +61,17 @@ public class MainActivity2 extends AppCompatActivity {
 
                 if (!TextUtils.isEmpty(loginEmailText) && !TextUtils.isEmpty(loginPassText)) {
 
-//                    final Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    final Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     mAuth.signInWithEmailAndPassword(loginEmailText, loginPassText).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 sendToMain();
-//                                vibe.vibrate(500);
+                                vibe.vibrate(500);
                             } else {
 
                                 String e = task.getException().getMessage();
-//                                Toast.makeText(activ.this, "Error :" + e, Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity2.this, "Error :" + e, Toast.LENGTH_LONG).show();
 
                             }
 
