@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "510145405215",
+    "firebase_url": "https://uee-sl-cricket.firebaseio.com",
+    "project_id": "uee-sl-cricket",
+    "storage_bucket": "uee-sl-cricket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510145405215:android:f86ee24541d3613a59102a",
+        "android_client_info": {
+          "package_name": "com.example.uee_sl_cricket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510145405215-5ndc5m6m4g919gnqf8gtahj0fvau0bnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uee_sl_cricket",
+            "certificate_hash": "73824a061f6625b8916e10a21fdd0d121b10b07b"
+          }
+        },
+        {
+          "client_id": "510145405215-g0teka5kjifjrl57v9trg6spdpva2doo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9K4m8y6TVU-Mghhwi9MB4VKMUhpUNJmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510145405215-g0teka5kjifjrl57v9trg6spdpva2doo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
