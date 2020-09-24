@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -21,8 +23,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class login extends AppCompatActivity {
-
+public class MainActivity2 extends AppCompatActivity {
 
     private EditText logingEmail;
     private EditText logingPass;
@@ -34,7 +35,12 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); // hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
+        setContentView(R.layout.activity_main2);
+
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -45,8 +51,7 @@ public class login extends AppCompatActivity {
 
 
         crtBtn = (Button) findViewById(R.id.button8);
-        /*signup.setOnClickListener(this);
-        bt.setOnClickListener(this);*/
+
 
         logingbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,13 +66,12 @@ public class login extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                System.out.println("done");
                                 sendToMain();
 //                                vibe.vibrate(500);
                             } else {
 
                                 String e = task.getException().getMessage();
-                                Toast.makeText(login.this, "Error :" + e, Toast.LENGTH_LONG).show();
+//                                Toast.makeText(activ.this, "Error :" + e, Toast.LENGTH_LONG).show();
 
                             }
 
@@ -79,36 +83,39 @@ public class login extends AppCompatActivity {
                 }
 
             }
+
         });
-
-
         crtBtn.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(login.this, signUp.class);
+                Intent i = new Intent(MainActivity2.this, signUp.class);
                 startActivity(i);
             }
         });
+
     }
 
 
-    @Override
+
+ @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+       FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
            /* Intent mainIntent= new Intent(loginact.this,MainActivity.class);
             startActivity(mainIntent);
-            finish();*/
+           finish();*/
             sendToMain();
         }
-    }
+  }
 
     private void sendToMain() {
-        Intent mainIntent = new Intent(login.this, MainActivity.class);
+        Intent mainIntent = new Intent(MainActivity2.this, MainActivity.class);
         startActivity(mainIntent);
         finish();
     }
+
+
 }

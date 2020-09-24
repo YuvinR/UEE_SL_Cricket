@@ -9,8 +9,8 @@
 
     <ScrollView
         android:id="@+id/scroll1"
-        android:layout_width="410dp"
-        android:layout_height="670dp"
+        android:layout_width="432dp"
+        android:layout_height="672dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.023"
@@ -44,8 +44,8 @@
                 android:layout_height="190dp"
                 android:layout_margin="10dp"
                 android:clickable="true"
-                android:onClick="rateUs"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="rateUs"
 
                 app:cardCornerRadius="10dp">
 
@@ -90,12 +90,14 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btn_logout"
+        android:id="@+id/btn_login"
         android:layout_width="85dp"
         android:layout_height="39dp"
         android:fontFamily="@font/quicksand_bold"
         android:shadowRadius="10"
-        android:text="Logout"
+        android:text="Login"
+        android:onClick="onClick"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -103,7 +105,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
         android:background="@drawable/logout_btn"/>
-
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:shadowRadius="10"
+        android:text="Logout"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:background="@drawable/logout_btn"/>
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="46dp"

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".login">
+    tools:context=".MainActivity2">
+
 
     <TextView
         android:id="@+id/textView19"
@@ -97,11 +98,11 @@
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="186dp"
-                android:layout_height="33dp"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="75sp"
                 android:layout_marginTop="320dp"
-                android:background="#F4F4F4"
+                android:background="#100AB6"
                 android:text="Create a New Account" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
