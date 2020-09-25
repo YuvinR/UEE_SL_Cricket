@@ -61,15 +61,56 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 //    }
 
     public void methodHome(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Home",Toast.LENGTH_SHORT);
-        toast.show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
+    public void profilePage(View view) {
+        /*Intent intent = new Intent(this, .class);
+        startActivity(intent);*/
+    }
+    public void latestNewsPage(View view) {
+        Intent intent = new Intent(this, Latest_News.class);
+        startActivity(intent);
+    }
+    public void pastMatchesPage(View view) {
+        Intent intent = new Intent(this, match_history.class);
+        startActivity(intent);
+    }
+    public void upComingMatchesPage(View view) {
+        Intent intent = new Intent(this, Upcoming_Matches.class);
+        startActivity(intent);
+    }
+    /*public void teamsPage(View view) {
+        Intent intent = new Intent();
+        startActivity(intent);
+    }*/
 
-    public void rateUs(View view) {
+    public void boardPages(View view) {
         Intent intent = new Intent(this, Cricket_Board.class);
         startActivity(intent);
     }
+
+    public void searchPage(View view) {
+        /*Intent intent = new Intent();
+        startActivity(intent);*/
+    }
+
+    /*public void galleryPage(View view) {
+        Intent intent = new Intent();
+        startActivity(intent);
+    }*/
+
+    public void rateUsPage(View view) {
+        Intent intent = new Intent(this, rate_us.class);
+        startActivity(intent);
+    }
+
+    public void contactUsPage(View view) {
+        Intent intent = new Intent(this, contact_us.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
