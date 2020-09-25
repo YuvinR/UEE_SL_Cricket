@@ -26,7 +26,8 @@ public class Notification extends AppCompatActivity {
     }
 
     public void methodHome(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"This Is Home",Toast.LENGTH_SHORT);
-        toast.show();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
+
 }
