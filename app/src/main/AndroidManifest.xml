@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".teams"></activity>
+        <activity android:name=".gallery" />
         <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,9 +32,7 @@
         <activity android:name=".payments" />
         <activity android:name=".rate_us" />
         <activity android:name=".contact_us" />
-        <activity android:name=".MainActivity"/>
-
-
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
