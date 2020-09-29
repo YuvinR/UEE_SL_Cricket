@@ -8,9 +8,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class payments extends AppCompatActivity {
+
+   private TextView displayTotal ;
+   private EditText ed1 , ed2 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,13 @@ public class payments extends AppCompatActivity {
             }
         });
 
+        Intent intent = getIntent();
+        String result = intent.getStringExtra("totValue");
+        Toast.makeText(getApplicationContext(),"Result :- "+result,Toast.LENGTH_LONG).show();
+        displayTotal = findViewById(R.id.TextViewTotal);
+        displayTotal.setText(result);
+        ed1 = findViewById(R.id.editTextTextPersonName);
+        ed2 = findViewById(R.id.editTextTextPersonName3);
     }
 
     public void methodNotification(View view) {
@@ -44,6 +56,9 @@ public class payments extends AppCompatActivity {
     public void openDialog(){
         ThankyouPayment thankYou = new ThankyouPayment();
         thankYou.show(getSupportFragmentManager(),"thank you");
+        ed1.setText("");
+        ed2.setText("");
+        displayTotal.setText("");
     }
 
 }
