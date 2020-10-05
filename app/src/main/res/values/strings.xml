@@ -13,4 +13,21 @@
 
     <string name="news3Topic"><u>SL vs BAN Test series to begin on October 24</u></string>
     <string name="news3body">Aug 12, 2020 All three matches likely to take place in Colombo; Bangladesh high-performance squad to travel too ...</string>
+
+    <string-array name="cus_type">
+        <item>Normal</item>
+        <item>VIP</item>
+    </string-array>
+    <string-array name="num_ticket">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 </resources>

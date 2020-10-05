@@ -174,14 +174,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.554" />
 
-    <EditText
-        android:id="@+id/spinner3"
+    <Spinner
+        android:id="@+id/ticket_num"
         android:layout_width="125dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
-        android:ems="2"
         android:textSize="16dp"
-        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
@@ -218,11 +216,11 @@
         app:layout_constraintVertical_bias="0.712" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/total_output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bree_serif"
-        android:text="LKR. 5000.00"
+        android:text=""
         android:textColor="@color/lightOrange"
         android:textSize="25dp"
         android:textStyle="bold"
