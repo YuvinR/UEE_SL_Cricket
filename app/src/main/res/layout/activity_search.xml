@@ -8,5 +8,72 @@
     tools:context=".SearchAct">
 
 
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:shadowRadius="10"
+        android:text="Login"
+        android:onClick="onClick"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:background="@drawable/logout_btn"/>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:shadowRadius="10"
+        android:text="Logout"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:background="@drawable/logout_btn"/>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Search"
+        android:shadowRadius="10"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <ScrollView
+        android:layout_width="431dp"
+        android:layout_height="684dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="179dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

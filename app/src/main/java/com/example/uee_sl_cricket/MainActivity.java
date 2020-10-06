@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
 
-    private Button login,logout;
+    private Button login,logout,search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         setContentView(R.layout.activity_main);
         login=(Button)findViewById(R.id.btn_login);
         logout=(Button)findViewById(R.id.btn_logout);
+        search = (Button)findViewById(R.id.button10);
     }
 
     @Override
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 finish();
                 i=new Intent(this,MainActivity2.class);
                 startActivity(i);
-
+            case R.id.button10 :  i=new Intent(this,SearchAct.class);startActivity(i);break;
             default:break;
         }
 
