@@ -14,8 +14,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class rate_us extends AppCompatActivity {
-    private  Button btnSubmit;
+    private  Button btnSubmit,logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d("test","Fuck Okk");
@@ -27,6 +29,7 @@ public class rate_us extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
 
         setContentView(R.layout.activity_rate_us);
+        logout=(Button)findViewById(R.id.btn_logout);
 
         final Button btn = findViewById(R.id.btn_submit);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +38,25 @@ public class rate_us extends AppCompatActivity {
                 openDialopg();
             }
         });
+
+    }
+
+    
+    public void onClick(View view) {
+        Intent i;
+
+        switch(view.getId())
+        {
+
+            case R.id.btn_login : i=new Intent(this,MainActivity2.class);startActivity(i);break;
+
+            case R.id.btn_logout: FirebaseAuth.getInstance().signOut();
+                finish();
+                i=new Intent(this,MainActivity2.class);
+                startActivity(i);
+
+            default:break;
+        }
 
     }
 
