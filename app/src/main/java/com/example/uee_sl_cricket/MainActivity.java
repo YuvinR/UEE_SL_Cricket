@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         Intent intent = new Intent(this, Upcoming_Matches.class);
         startActivity(intent);
     }
-    /*public void teamsPage(View view) {
-        Intent intent = new Intent();
+    public void teamsPage(View view) {
+        Intent intent = new Intent(this, teams.class);
         startActivity(intent);
-    }*/
+    }
 
     public void boardPages(View view) {
         Intent intent = new Intent(this, Cricket_Board.class);
@@ -96,10 +96,10 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         startActivity(intent);*/
     }
 
-    /*public void galleryPage(View view) {
-        Intent intent = new Intent();
+    public void galleryPage(View view) {
+        Intent intent = new Intent(this, gallery.class);
         startActivity(intent);
-    }*/
+    }
 
     public void rateUsPage(View view) {
         Intent intent = new Intent(this, rate_us.class);

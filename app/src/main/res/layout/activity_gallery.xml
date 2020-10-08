@@ -77,83 +77,26 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Images" />
+            android:text="Images"
+            android:id="@+id/tabImages"/>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Videos" />
+            android:text="Videos"
+            android:id="@+id/tabVideos"/>
 
 
     </com.google.android.material.tabs.TabLayout>
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="167dp"
-        android:layout_height="149dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:srcCompat="@drawable/cimg1" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="177dp"
-        android:layout_height="144dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:srcCompat="@drawable/cimg2" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="162dp"
-        android:layout_height="149dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.586"
-        app:srcCompat="@drawable/cimg3" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="176dp"
-        android:layout_height="146dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.569"
-        app:srcCompat="@drawable/cimg4" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="161dp"
-        android:layout_height="145dp"
-        android:layout_marginBottom="16dp"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cimg5" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="175dp"
-        android:layout_height="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:layout_constraintVertical_bias="0.948"
-        app:srcCompat="@drawable/cimg6" />
-
+        android:layout_marginTop="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
