@@ -14,6 +14,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Profile"></activity>
         <activity android:name=".spalsh_screen">
+        <activity android:name=".teams"></activity>
+        <activity android:name=".gallery" />
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

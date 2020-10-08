@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideosFragment">
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:videoId="MMU3-nsKhEs" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:videoId="cHlIxAB6RY0" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:videoId="1dD1-OscafY" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:videoId="O1cXV8BfZiM" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true"
+                app:videoId="YPep4gcnGI8" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

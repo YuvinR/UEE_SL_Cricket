@@ -231,6 +231,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Cricket Teams"
+        android:onClick="teamsPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -243,6 +244,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Gallery"
+        android:onClick="galleryPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -275,5 +277,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.857" />
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
