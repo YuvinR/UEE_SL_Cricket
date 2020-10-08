@@ -54,7 +54,7 @@
                 android:layout_height="36dp"
                 android:layout_marginLeft="100sp"
                 android:layout_marginTop="260sp"
-                android:background="#4D8CED"
+                android:background="@color/lightOrange"
                 android:clickable="true"
                 android:text="LogIn"
                 android:textAlignment="center" />

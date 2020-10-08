@@ -12,19 +12,8 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class SearchAct extends AppCompatActivity implements  View.OnClickListener {
-
+public class Profile extends AppCompatActivity implements  View.OnClickListener{
     private Button login, logout;
-
-    public void methodNotification(View view) {
-        Intent intent = new Intent(this, Notification.class);
-        startActivity(intent);
-    }
-
-    public void methodHome(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +21,7 @@ public class SearchAct extends AppCompatActivity implements  View.OnClickListene
         getSupportActionBar().hide(); // hide the title bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
-        setContentView(R.layout.activity_search);
+        setContentView(R.layout.activity_profile);
         login=(Button)findViewById(R.id.btn_login);
         logout=(Button)findViewById(R.id.btn_logout);
     }
@@ -60,7 +49,7 @@ public class SearchAct extends AppCompatActivity implements  View.OnClickListene
         super.onStart();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user == null) {
-            Intent intent = new Intent(SearchAct.this,MainActivity2.class);
+            Intent intent = new Intent(Profile.this,MainActivity2.class);
             startActivity(intent);
             finish();
             logout.setVisibility(View.INVISIBLE);
@@ -70,5 +59,14 @@ public class SearchAct extends AppCompatActivity implements  View.OnClickListene
             login.setVisibility(View.INVISIBLE);
             // No user is signed in
         }
+    }
+    public void methodNotification(View view) {
+        Intent intent = new Intent(this, Notification.class);
+        startActivity(intent);
+    }
+
+    public void methodHome(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
