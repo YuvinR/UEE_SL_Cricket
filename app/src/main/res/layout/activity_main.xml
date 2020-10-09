@@ -7,157 +7,6 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <!--<ScrollView
-        android:id="@+id/scroll1"
-        android:layout_width="432dp"
-        android:layout_height="672dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="169dp"
-
-            android:layout_height="233dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:clipToPadding="false"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.009"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:layout_constraintVertical_bias="0.073">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardId1"
-                android:layout_width="160dp"
-                android:layout_height="190dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="rateUs"
-
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:padding="10dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="RateUs"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Keep plan of your Workouts"
-                        android:textColor="@android:color/darker_gray" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_margin="10dp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
-
-
-    </ScrollView>-->
-
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="boardPages"
-        android:text="Cricket Board Details"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="upComingMatchesPage"
-        android:text="Upcoming Matches"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="pastMatchesPage"
-        android:text="Past Matches"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="85dp"
-        android:layout_height="39dp"
-        android:fontFamily="@font/quicksand_bold"
-        android:shadowRadius="10"
-        android:text="Login"
-        android:onClick="onClick"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        android:background="@drawable/logout_btn"/>
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="85dp"
@@ -174,6 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02"
         android:background="@drawable/logout_btn"/>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="46dp"
@@ -201,82 +51,215 @@
         app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        android:onClick="profilePage"
+        android:id="@+id/btn_login"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:shadowRadius="10"
+        android:text="Login"
+        android:onClick="onClick"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.02"
+        android:background="@drawable/logout_btn"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="latestNewsPage"
-        android:text="Latest News"
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="91dp"
+        android:layout_height="59dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/log_sl" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cricket Teams"
-        android:onClick="teamsPage"
+        android:fontFamily="@font/lato_bold"
+        android:text="Sri Lanka"
+        android:textColor="@color/white"
+        android:textSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.077" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gallery"
-        android:onClick="galleryPage"
+        android:fontFamily="@font/lato"
+        android:text="Cricket"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+        app:layout_constraintVertical_bias="0.133" />
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="rateUsPage"
-        android:text="Rate Us"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="90dp"
+        android:layout_marginTop="160dp">
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="contactUsPage"
-        android:text="Contact Us"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
-    
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_user_24"
+                        android:onClick="profilePage"
+                        android:padding="30dp"
+                        android:scaleType="fitXY"
+                        android:text="Profile"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"
+                        />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_prev_24"
+                        android:onClick="pastMatchesPage"
+                        android:padding="30dp"
+                        android:text="Past Matches"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_user_account_24"
+                        android:onClick="teamsPage"
+                        android:padding="30dp"
+                        android:text="Cricket Teams"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_search_24"
+                        android:onClick="onClick"
+                        android:padding="30dp"
+                        android:text="Search"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_star_filled_24"
+                        android:onClick="rateUsPage"
+                        android:padding="30dp"
+                        android:text="Rate Us"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_news_24"
+                        android:onClick="latestNewsPage"
+                        android:padding="30dp"
+                        android:text="Latest News"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_slide_up_24"
+                        android:onClick="upComingMatchesPage"
+                        android:padding="30dp"
+                        android:text="Upcoming Matches"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_people_24"
+                        android:onClick="boardPages"
+                        android:padding="30dp"
+                        android:text="Cricket Board "
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_gallery_24"
+                        android:onClick="galleryPage"
+                        android:padding="30dp"
+                        android:text="Gallery"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:drawableTop="@drawable/icons8_phone_24"
+                        android:onClick="contactUsPage"
+                        android:padding="30dp"
+                        android:text="Contact Us"
+                        android:background="@drawable/dash_btn"
+                        android:layout_marginBottom="30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
