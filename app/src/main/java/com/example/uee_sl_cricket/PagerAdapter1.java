@@ -1,15 +1,13 @@
 package com.example.uee_sl_cricket;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class PagerAdapter extends FragmentPagerAdapter {
-
+public class PagerAdapter1 extends FragmentPagerAdapter {
     private int numOfTabs;
 
-    public PagerAdapter(FragmentManager fm, int numOfTabs){
+    public PagerAdapter1(FragmentManager fm, int numOfTabs){
         super(fm);
         this.numOfTabs = numOfTabs;
     }
@@ -18,9 +16,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new ImagesFragment();
+                return new MensTeamFragment();
             case 1:
-                return new VideosFragment();
+                return new WomensTeamFragment();
             default:
                 return null;
         }
